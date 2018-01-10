@@ -1,0 +1,60 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-default {
+  background-color: #009688;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-default * {
+  color: #FFF !important;
+}
+
+.navvbar-brand {
+  cursor: pointer;
+}
+
+.intro {
+  display: table;
+  width: 100%;
+  height: 700px;
+  background-color: #009688;
+  background: linear-gradient(to bottom, #009688 0%, #00BCD4 100%)
+}
+
+.intro-child {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding: 5rem 10rem;
+  color: #FFF;
+}
+
+.intro .name {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.intro .name:after {
+  content: ' ';
+  display: block;
+  width: 27rem;
+  margin: 10px auto 10px 0;
+  border: 2px solid #FFF;
+}
+
+.intro .position {
+  font-size: 3rem;
+}
