@@ -4,9 +4,40 @@ import Image from './img/joshhumpherys.jpeg'
 import $ from 'jquery'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      sectionsVisible: []
+    };
+
+    this.isVisible = this.isVisible.bind(this);
+  }
+
   static scroll(id) {
     const scrollTop = $('#' + id).offset().top - 60;
     $('body, html').animate({ scrollTop });
+  }
+
+  isVisible(id) {
+    return this.state.sectionsVisible.includes(id);
+  }
+
+  componentDidMount() {
+    const sections = ['about', 'professional', 'personal', 'skills', 'hobbies'];
+    const viewportBottom = $(window).scrollTop() + $(window).height();
+    const handleScroll = () => {
+      const sectionsVisible = [...this.state.sectionsVisible];
+      sections.forEach(section => {
+        const sectionHeight = $('#' + section).offset().top - $(document).scrollTop();
+        if(sectionHeight < viewportBottom - 100 && !sectionsVisible.includes(section)) {
+          sectionsVisible.push(section);
+        }
+      });
+      this.setState({ sectionsVisible });
+    };
+    handleScroll();
+    $(window).scroll(handleScroll);
   }
 
   render() {
@@ -29,7 +60,7 @@ class App extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <div className="intro">
+        <div id="intro" className="intro">
           <div className="intro-child">
             <div className="intro-image-container">
               <img className="intro-image" src={Image} />
@@ -45,8 +76,8 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div className="main-container">
-          <div className="section" id="about">
+        <div id="main-container" className="main-container">
+          <div className={'section animated animatedFadeInUp' + (this.isVisible('about') ? ' fadeInUp' : '')} id="about">
             <h2>About</h2>
               <p>In May I will graduate from Covenant College with Bachelors degrees in both Computer Science and Mathematics. I have a passion for solving problems and am looking for a full-time programming position that will allow me to think critically to solve hard problems and increase my technical expertise.</p>
               <p>I recently completed a software engineering internship at Illumina writing C# applications and libraries for their Next-Generation Sequencing (NGS) instruments. Before my most recent position at Ilumina, I was a software development intern at Paragon Component Systems, LLC, where I was a full-stack web developer.</p>
@@ -80,7 +111,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="section" id="professional">
+          <div className={'section animated animatedFadeInUp' + (this.isVisible('professional') ? ' fadeInUp' : '')} id="professional">
             <h2>Professional Experience</h2>
             <div className="project">
               <div className="project-text">
@@ -102,8 +133,18 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="section" id="personal">
+          <div className={'section animated animatedFadeInUp' + (this.isVisible('personal') ? ' fadeInUp' : '')} id="personal">
             <h2>Personal Projects</h2>
+            <div className="project">
+              <div className="project-text">
+                <h3>JoshHumpherys.com</h3>
+                <p>I programmed this website without a template using React and various other npm packages such as React-Bootstrap and jQuery. The project is hosted on Firebase.</p>
+                <h4><a href="https://github.com/JoshHumpherys/JoshHumpherys" target="blank">(source)</a></h4>
+              </div>
+              <div className="project-date">
+                January 2018
+              </div>
+            </div>
             <div className="project">
               <div className="project-text">
                 <h3>Cube Timer</h3>
@@ -128,7 +169,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="section" id="skills">
+          <div className={'section animated animatedFadeInUp' + (this.isVisible('skills') ? ' fadeInUp' : '')} id="skills">
             <h2>Skills</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
             <p>Mauris tempus elit posuere arcu bibendum, in accumsan nisl euismod. Aliquam pharetra placerat quam, in cursus enim auctor quis. Nulla eros ligula, suscipit sit amet sapien vel, volutpat volutpat sapien. Duis aliquam laoreet rutrum. Integer lacus arcu, lobortis a pharetra vel, accumsan in erat. Nunc elit leo, malesuada et malesuada nec, commodo at sem. Pellentesque vehicula, nisi quis rutrum egestas, felis justo sollicitudin mi, vitae molestie dolor turpis in nunc. Curabitur feugiat turpis at sem efficitur, vitae efficitur sapien blandit.</p>
@@ -136,7 +177,7 @@ class App extends Component {
             <p>Integer sodales lobortis est, at vestibulum lectus pretium sit amet. Curabitur facilisis condimentum erat, a malesuada augue malesuada eu. Mauris orci diam, suscipit ullamcorper magna iaculis, interdum porttitor nisl. Sed fringilla tortor sit amet pellentesque gravida. Donec eleifend, felis sit amet suscipit congue, magna tellus molestie magna, lacinia volutpat nisl arcu quis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tristique quam vitae lobortis. Etiam augue ipsum, porta vitae semper vitae, malesuada nec erat. Donec sit amet enim lorem. Vivamus luctus, dolor et egestas egestas, est sem maximus orci, quis tempor justo arcu ac ipsum. Vivamus sit amet tempus enim.</p>
             <p>Quisque non iaculis nibh. Mauris urna ante, porttitor ac pulvinar eu, aliquam sit amet nunc. Quisque ullamcorper, orci in cursus ultricies, erat leo tempus ipsum, eu fringilla arcu risus vel neque. Nunc vel ipsum et nunc porttitor vehicula. Cras sed pretium orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc varius purus molestie nibh convallis consectetur. Nulla semper enim sit amet dui dignissim, a hendrerit purus convallis. Curabitur dignissim tellus sit amet sem eleifend commodo.</p>
           </div>
-          <div className="section" id="hobbies">
+          <div className={'section animated animatedFadeInUp' + (this.isVisible('hobbies') ? ' fadeInUp' : '')} id="hobbies">
             <h2>Hobbies</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
             <p>Mauris tempus elit posuere arcu bibendum, in accumsan nisl euismod. Aliquam pharetra placerat quam, in cursus enim auctor quis. Nulla eros ligula, suscipit sit amet sapien vel, volutpat volutpat sapien. Duis aliquam laoreet rutrum. Integer lacus arcu, lobortis a pharetra vel, accumsan in erat. Nunc elit leo, malesuada et malesuada nec, commodo at sem. Pellentesque vehicula, nisi quis rutrum egestas, felis justo sollicitudin mi, vitae molestie dolor turpis in nunc. Curabitur feugiat turpis at sem efficitur, vitae efficitur sapien blandit.</p>
