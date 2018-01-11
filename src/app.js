@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import Image from './img/joshhumpherys.jpeg'
 
 class App extends React.Component {
   render() {
@@ -24,8 +25,15 @@ class App extends React.Component {
         </Navbar>
         <div className="intro">
           <div className="intro-child">
-            <div className="name">Josh Humpherys</div>
-            <div className="position">Software Engineer</div>
+            <div className="intro-image-container">
+              <img className="intro-image" src={Image} />
+            </div>
+            <div className="intro-text-container">
+              <div className="intro-text">
+                <div className="intro-name">Josh Humpherys</div>
+                <div className="intro-position">Software Engineer</div>
+              </div>
+            </div>
           </div>
         </div>
         content
