@@ -11,11 +11,11 @@ class App extends Component {
 
   render() {
     return (
-      <div id="root">
+      <div id="home">
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <a onClick={() => App.scroll('root')}>Josh Humpherys</a>
+              <a onClick={() => App.scroll('home')}>Josh Humpherys</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -38,6 +38,9 @@ class App extends Component {
               <div className="intro-text">
                 <div className="intro-name">Josh Humpherys</div>
                 <div className="intro-position">Software Engineer</div>
+                <div className="intro-location-and-email">
+                  San Diego, CA <a href="mailto:joshua.humpherys@gmail.com">joshua.humpherys@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
@@ -45,8 +48,11 @@ class App extends Component {
         <div className="main-container">
           <div className="section" id="about">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
-            <p>Mauris tempus elit posuere arcu bibendum, in accumsan nisl euismod. Aliquam pharetra placerat quam, in cursus enim auctor quis. Nulla eros ligula, suscipit sit amet sapien vel, volutpat volutpat sapien. Duis aliquam laoreet rutrum. Integer lacus arcu, lobortis a pharetra vel, accumsan in erat. Nunc elit leo, malesuada et malesuada nec, commodo at sem. Pellentesque vehicula, nisi quis rutrum egestas, felis justo sollicitudin mi, vitae molestie dolor turpis in nunc. Curabitur feugiat turpis at sem efficitur, vitae efficitur sapien blandit.</p>
+              <p>In May I will graduate with Bachelors degrees in both Computer Science and Mathematics. I have a passion for solving problems and am looking for a full-time programming position that will allow me to think critically to solve hard problems and increase my technical expertise.</p>
+              <p>I recently completed a software engineering internship at Illumina writing C# applications and libraries for their Next-Generation Sequencing (NGS) instruments. Before my most recent position at Ilumina, I was a software development intern at Paragon Component Systems, LLC, where I was a full-stack web developer.</p>
+              <p>In 2015 I graduated from La Costa Canyon High School with a 4.58 GPA (4.00 unweighted) and passed 14 AP tests. After graduation I enrolled in a compilation of courses known as the Android Development Nanodegree, co-created by Google and Udacity, but I put the nanodegree on hold to be continued at a later date.</p>
+              <p>My hobbies and regular activities include developing retro-style arcade games and Android apps, reading about new technology, learning about best coding practices and design guidelines, playing frisbee and volleyball, speedcubing, and running.</p>
+            <p>I'm highly self-motivated and am always looking for new opportunities to gain experience and expand my realm of knowledge.</p>
             <div className="social-icons-container">
               <div className="social-icon">
                 <a href="https://github.com/JoshHumpherys" target="blank">
