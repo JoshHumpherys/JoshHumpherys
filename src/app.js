@@ -48,7 +48,7 @@ class App extends Component {
         <div className="main-container">
           <div className="section" id="about">
             <h2>About</h2>
-              <p>In May I will graduate with Bachelors degrees in both Computer Science and Mathematics. I have a passion for solving problems and am looking for a full-time programming position that will allow me to think critically to solve hard problems and increase my technical expertise.</p>
+              <p>In May I will graduate from Covenant College with Bachelors degrees in both Computer Science and Mathematics. I have a passion for solving problems and am looking for a full-time programming position that will allow me to think critically to solve hard problems and increase my technical expertise.</p>
               <p>I recently completed a software engineering internship at Illumina writing C# applications and libraries for their Next-Generation Sequencing (NGS) instruments. Before my most recent position at Ilumina, I was a software development intern at Paragon Component Systems, LLC, where I was a full-stack web developer.</p>
               <p>In 2015 I graduated from La Costa Canyon High School with a 4.58 GPA (4.00 unweighted) and passed 14 AP tests. After graduation I enrolled in a compilation of courses known as the Android Development Nanodegree, co-created by Google and Udacity, but I put the nanodegree on hold to be continued at a later date.</p>
               <p>My hobbies and regular activities include developing retro-style arcade games and Android apps, reading about new technology, learning about best coding practices and design guidelines, playing frisbee and volleyball, speedcubing, and running.</p>
@@ -81,20 +81,52 @@ class App extends Component {
             </div>
           </div>
           <div className="section" id="professional">
-            <h2>Professional Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
-            <p>Mauris tempus elit posuere arcu bibendum, in accumsan nisl euismod. Aliquam pharetra placerat quam, in cursus enim auctor quis. Nulla eros ligula, suscipit sit amet sapien vel, volutpat volutpat sapien. Duis aliquam laoreet rutrum. Integer lacus arcu, lobortis a pharetra vel, accumsan in erat. Nunc elit leo, malesuada et malesuada nec, commodo at sem. Pellentesque vehicula, nisi quis rutrum egestas, felis justo sollicitudin mi, vitae molestie dolor turpis in nunc. Curabitur feugiat turpis at sem efficitur, vitae efficitur sapien blandit.</p>
-            <p>Curabitur vehicula purus quis nisl auctor elementum. Quisque vitae commodo est. Nulla eleifend dapibus risus eu bibendum. Phasellus porttitor enim id tempor maximus. Vestibulum tempor velit justo, et convallis lacus imperdiet ut. Nulla egestas dictum dolor eu hendrerit. Ut in odio diam. Quisque in mauris luctus, vulputate enim eu, tempus diam. Quisque consectetur massa erat, ut iaculis erat blandit a. Etiam diam orci, consequat sit amet leo a, convallis semper nibh. Donec elementum, quam non accumsan sollicitudin, leo magna commodo sapien, nec pharetra justo nunc sed est. Fusce eu odio tempus, molestie turpis quis, mollis sapien. Sed ac nisl nec metus eleifend ornare et faucibus turpis.</p>
-            <p>Integer sodales lobortis est, at vestibulum lectus pretium sit amet. Curabitur facilisis condimentum erat, a malesuada augue malesuada eu. Mauris orci diam, suscipit ullamcorper magna iaculis, interdum porttitor nisl. Sed fringilla tortor sit amet pellentesque gravida. Donec eleifend, felis sit amet suscipit congue, magna tellus molestie magna, lacinia volutpat nisl arcu quis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tristique quam vitae lobortis. Etiam augue ipsum, porta vitae semper vitae, malesuada nec erat. Donec sit amet enim lorem. Vivamus luctus, dolor et egestas egestas, est sem maximus orci, quis tempor justo arcu ac ipsum. Vivamus sit amet tempus enim.</p>
-            <p>Quisque non iaculis nibh. Mauris urna ante, porttitor ac pulvinar eu, aliquam sit amet nunc. Quisque ullamcorper, orci in cursus ultricies, erat leo tempus ipsum, eu fringilla arcu risus vel neque. Nunc vel ipsum et nunc porttitor vehicula. Cras sed pretium orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc varius purus molestie nibh convallis consectetur. Nulla semper enim sit amet dui dignissim, a hendrerit purus convallis. Curabitur dignissim tellus sit amet sem eleifend commodo.</p>
+            <h2>Professional Experience</h2>
+            <div className="project">
+              <div className="project-text">
+                <h3>Illumina</h3>
+                <p>I developed software for one of Illumina's upcoming Next-Generation Sequencing (NGS) instruments. Some of the projects I worked on included a front-end application for end users to do sequencing runs, a front-end application for manufacturers to test the instruments before shipment, and back-end libraries to control the instruments. All of our code was written in C#, and the views used either WPF or UWP.</p>
+              </div>
+              <div className="project-date">
+                Summer 2017
+              </div>
+            </div>
+            <div className="project">
+              <div className="project-text">
+                <h3>Paragon Component Systems, L.L.C.</h3>
+                <p>I developed software for structural engineers. The software provided functionality to model trusses in a 3D editor, along with other useful tools to increase efficiency in sharing engineering files and managing engineering jobs.</p>
+                <p>My job primarily consisted of front-end web development including the use of Javascript with React and Redux. We used Node.js and various npm and bower packages, most notably Gulp, Stylus, Jade, JQuery, Lodash, Oboe, Babel, Postal, and Three.js. I also worked on the C#, Entity Framework server writing routes and updating the database schema.</p>
+              </div>
+              <div className="project-date">
+                Summer 2016
+              </div>
+            </div>
           </div>
           <div className="section" id="personal">
             <h2>Personal Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
-            <p>Mauris tempus elit posuere arcu bibendum, in accumsan nisl euismod. Aliquam pharetra placerat quam, in cursus enim auctor quis. Nulla eros ligula, suscipit sit amet sapien vel, volutpat volutpat sapien. Duis aliquam laoreet rutrum. Integer lacus arcu, lobortis a pharetra vel, accumsan in erat. Nunc elit leo, malesuada et malesuada nec, commodo at sem. Pellentesque vehicula, nisi quis rutrum egestas, felis justo sollicitudin mi, vitae molestie dolor turpis in nunc. Curabitur feugiat turpis at sem efficitur, vitae efficitur sapien blandit.</p>
-            <p>Curabitur vehicula purus quis nisl auctor elementum. Quisque vitae commodo est. Nulla eleifend dapibus risus eu bibendum. Phasellus porttitor enim id tempor maximus. Vestibulum tempor velit justo, et convallis lacus imperdiet ut. Nulla egestas dictum dolor eu hendrerit. Ut in odio diam. Quisque in mauris luctus, vulputate enim eu, tempus diam. Quisque consectetur massa erat, ut iaculis erat blandit a. Etiam diam orci, consequat sit amet leo a, convallis semper nibh. Donec elementum, quam non accumsan sollicitudin, leo magna commodo sapien, nec pharetra justo nunc sed est. Fusce eu odio tempus, molestie turpis quis, mollis sapien. Sed ac nisl nec metus eleifend ornare et faucibus turpis.</p>
-            <p>Integer sodales lobortis est, at vestibulum lectus pretium sit amet. Curabitur facilisis condimentum erat, a malesuada augue malesuada eu. Mauris orci diam, suscipit ullamcorper magna iaculis, interdum porttitor nisl. Sed fringilla tortor sit amet pellentesque gravida. Donec eleifend, felis sit amet suscipit congue, magna tellus molestie magna, lacinia volutpat nisl arcu quis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tristique quam vitae lobortis. Etiam augue ipsum, porta vitae semper vitae, malesuada nec erat. Donec sit amet enim lorem. Vivamus luctus, dolor et egestas egestas, est sem maximus orci, quis tempor justo arcu ac ipsum. Vivamus sit amet tempus enim.</p>
-            <p>Quisque non iaculis nibh. Mauris urna ante, porttitor ac pulvinar eu, aliquam sit amet nunc. Quisque ullamcorper, orci in cursus ultricies, erat leo tempus ipsum, eu fringilla arcu risus vel neque. Nunc vel ipsum et nunc porttitor vehicula. Cras sed pretium orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc varius purus molestie nibh convallis consectetur. Nulla semper enim sit amet dui dignissim, a hendrerit purus convallis. Curabitur dignissim tellus sit amet sem eleifend commodo.</p>
+            <div className="project">
+              <div className="project-text">
+                <h3>Cube Timer</h3>
+                <p>I'm creating a browser-based timer for speedcubers to record solve times and perform analysis. Speedcubers are people whose hobby is to solve a Rubik's cube as fast as possible, and to do so hundreds of times per session. This timer will record every solve time and display many different averages and distribution graphs. My goal is to create a timer with both outstanding functionality and an aesthetically-pleasing, intuitive user interface.</p>
+                <h4><a href="https://github.com/JoshHumpherys/cube-timer" target="blank">(source)</a></h4>
+              </div>
+              <div className="project-date">
+                January 2018
+              </div>
+            </div>
+            <div className="project">
+              <div className="project-text">
+                <h3>AutomaDraw</h3>
+                <p>I developed this program as a capstone project for my B.A. Computer Science degree at Covenant College. It is a web application that allows users to create and analyze various automata and formal grammars found in computational theory. Included in this application are finite state machines, pushdown automata, Turing machines, regular expressions, and the four grammars in the Chomsky hierarchy, namely regular, context-free, context-sensitive, and unrestricted grammars. Users are able to run different input strings through the machines and grammars they create to see how they respond.</p>
+                <h4>
+                  <a href="https://github.com/JoshHumpherys/AutomaDraw" target="blank">(source)</a>&nbsp;
+                  <a href="https://www.automadraw.com" target="blank">(full app)</a>
+                </h4>
+              </div>
+              <div className="project-date">
+                Fall 2017
+              </div>
+            </div>
           </div>
           <div className="section" id="skills">
             <h2>Skills</h2>

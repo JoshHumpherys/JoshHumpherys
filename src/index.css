@@ -132,3 +132,15 @@ h2 {
   font-weight: bold;
   text-align: center;
 }
+
+.project {
+  display: flex;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-date {
+  color: #00BCD4;
+}
