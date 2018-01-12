@@ -14,7 +14,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #009688;
+  background-color: #006DF0;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
@@ -31,7 +31,7 @@ body {
 .intro {
   width: 100%;
   height: 350px;
-  background: linear-gradient(#009688, #00BCD4);
+  background: linear-gradient(#006DF0, #00BCD4);
   margin-bottom: 40px;
 }
 
@@ -160,16 +160,33 @@ h2 {
   text-align: center;
 }
 
+.social-icons-container > .social-icon > a > svg:hover {
+  fill: #006DF0;
+}
+
 .project {
   display: flex;
+  flex-direction: column;
 }
 
 .project-text {
   flex: 1;
+  display: flex;
+}
+
+.project-name {
+  display: inline;
 }
 
 .project-date {
   color: #00BCD4;
+  margin: auto 0;
+  text-align: right;
+  flex: 1;
+}
+
+.project-source {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {

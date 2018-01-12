@@ -96,15 +96,15 @@ class App extends Component {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/joshhumpherys" target="blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
                   </svg>
                 </a>
                 <div>LinkedIn</div>
               </div>
               <div className="social-icon">
                 <a href="https://github.com/JoshHumpherys/Resume/raw/master/JoshuaHumpherys.pdf" target="blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                    <path d="M11.362 2c4.156 0 2.638 6 2.638 6s6-1.65 6 2.457v11.543h-16v-20h7.362zm.827-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-10v-1h10v1zm0 2h-10v1h10v-1zm0 3h-10v1h10v-1z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 299.998 299.998">
+                    <path d="M149.995,0.001C67.156,0.001,0,67.16,0,149.999s67.156,149.997,149.995,149.997s150.003-67.161,150.003-149.997    C299.997,67.157,232.834,0.001,149.995,0.001z M217.205,217.204c0,10.066-8.159,18.225-18.223,18.225h-97.967    c-10.068,0-18.225-8.159-18.225-18.225V82.79c0-10.066,8.159-18.225,18.225-18.225h76.892v36.45h39.298V217.204z M185.688,93.232    V64.563l31.517,28.669H185.688z" />
                   </svg>
                 </a>
                 <div>Resume</div>
@@ -115,58 +115,62 @@ class App extends Component {
             <h2>Professional Experience</h2>
             <div className="project">
               <div className="project-text">
-                <h3>Illumina, Inc.</h3>
-                <p>I developed software for one of Illumina's upcoming Next-Generation Sequencing (NGS) instruments. Some of the projects I worked on included a front-end application for end users to do sequencing runs, a front-end application for manufacturers to test the instruments before shipment, and back-end libraries to control the instruments. All of our code was written in C#, and the views used either WPF or UWP.</p>
+                <h3 className="project-name">Illumina, Inc.</h3>
+                <div className="project-date">
+                  Summer 2017
+                </div>
               </div>
-              <div className="project-date">
-                Summer 2017
-              </div>
+              <p>I developed software for one of Illumina's upcoming Next-Generation Sequencing (NGS) instruments. Some of the projects I worked on included a front-end application for end users to do sequencing runs, a front-end application for manufacturers to test the instruments before shipment, and back-end libraries to control the instruments. All of our code was written in C#, and the views used either WPF or UWP.</p>
             </div>
             <div className="project">
               <div className="project-text">
-                <h3>Paragon Component Systems, L.L.C.</h3>
-                <p>I developed software for structural engineers. The software provided functionality to model trusses in a 3D editor, along with other useful tools to increase efficiency in sharing engineering files and managing engineering jobs.</p>
-                <p>My job primarily consisted of front-end web development including the use of Javascript with React and Redux. We used Node.js and various npm and bower packages, most notably Gulp, Stylus, Jade, JQuery, Lodash, Oboe, Babel, Postal, and Three.js. I also worked on the C#, Entity Framework server writing routes and updating the database schema.</p>
+                <h3 className="project-name">Paragon Component Systems, L.L.C.</h3>
+                <div className="project-date">
+                  Summer 2016
+                </div>
               </div>
-              <div className="project-date">
-                Summer 2016
-              </div>
+              <p>I developed software for structural engineers. The software provided functionality to model trusses in a 3D editor, along with other useful tools to increase efficiency in sharing engineering files and managing engineering jobs.</p>
+              <p>My job primarily consisted of front-end web development including the use of Javascript with React and Redux. We used Node.js and various npm and bower packages, most notably Gulp, Stylus, Jade, JQuery, Lodash, Oboe, Babel, Postal, and Three.js. I also worked on the C#, Entity Framework server writing routes and updating the database schema.</p>
             </div>
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('personal') ? ' fadeInUp' : '')} id="personal">
             <h2>Personal Projects</h2>
             <div className="project">
               <div className="project-text">
-                <h3>JoshHumpherys.com</h3>
-                <p>I programmed this website without a template using React and various other npm packages such as React-Bootstrap and jQuery. The project is hosted on Firebase.</p>
-                <h4><a href="https://github.com/JoshHumpherys/JoshHumpherys" target="blank">(source)</a></h4>
+                <h3 className="project-name">JoshHumpherys.com</h3>
+                <div className="project-date">
+                  January 2018
+                </div>
               </div>
-              <div className="project-date">
-                January 2018
-              </div>
+              <p>I programmed this website without a template using React and various other npm packages such as React-Bootstrap and jQuery. The project is hosted on Firebase.</p>
+              <h4 className="project-source">
+                <a href="https://github.com/JoshHumpherys/JoshHumpherys" target="blank">(source)</a>
+              </h4>
             </div>
             <div className="project">
               <div className="project-text">
-                <h3>Cube Timer</h3>
-                <p>I'm creating a browser-based timer for speedcubers to record solve times and perform analysis. Speedcubers are people whose hobby is to solve a Rubik's cube as fast as possible, and to do so hundreds of times per session. This timer will record every solve time and display many different averages and distribution graphs. My goal is to create a timer with both outstanding functionality and an aesthetically-pleasing, intuitive user interface.</p>
-                <h4><a href="https://github.com/JoshHumpherys/cube-timer" target="blank">(source)</a></h4>
+                <h3 className="project-name">Cube Timer</h3>
+                <div className="project-date">
+                  January 2018
+                </div>
               </div>
-              <div className="project-date">
-                January 2018
-              </div>
+              <p>I'm creating a browser-based timer for speedcubers to record solve times and perform analysis. Speedcubers are people whose hobby is to solve a Rubik's cube as fast as possible, and to do so hundreds of times per session. This timer will record every solve time and display many different averages and distribution graphs. My goal is to create a timer with both outstanding functionality and an aesthetically-pleasing, intuitive user interface.</p>
+              <h4 className="project-source">
+                <a href="https://github.com/JoshHumpherys/cube-timer" target="blank">(source)</a>
+              </h4>
             </div>
             <div className="project">
               <div className="project-text">
-                <h3>AutomaDraw</h3>
-                <p>I developed this program as a capstone project for my B.A. Computer Science degree at Covenant College. It is a web application that allows users to create and analyze various automata and formal grammars found in computational theory. Included in this application are finite state machines, pushdown automata, Turing machines, regular expressions, and the four grammars in the Chomsky hierarchy, namely regular, context-free, context-sensitive, and unrestricted grammars. Users are able to run different input strings through the machines and grammars they create to see how they respond.</p>
-                <h4>
-                  <a href="https://github.com/JoshHumpherys/AutomaDraw" target="blank">(source)</a>&nbsp;
-                  <a href="https://www.automadraw.com" target="blank">(full app)</a>
-                </h4>
+                <h3 className="project-name">AutomaDraw</h3>
+                <div className="project-date">
+                  Fall 2017
+                </div>
               </div>
-              <div className="project-date">
-                Fall 2017
-              </div>
+              <p>I developed this program as a capstone project for my B.A. Computer Science degree at Covenant College. It is a web application that allows users to create and analyze various automata and formal grammars found in computational theory. Included in this application are finite state machines, pushdown automata, Turing machines, regular expressions, and the four grammars in the Chomsky hierarchy, namely regular, context-free, context-sensitive, and unrestricted grammars. Users are able to run different input strings through the machines and grammars they create to see how they respond.</p>
+              <h4 className="project-source">
+                <a href="https://github.com/JoshHumpherys/AutomaDraw" target="blank">(source)</a>&nbsp;
+                <a href="https://www.automadraw.com" target="blank">(full app)</a>
+              </h4>
             </div>
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('skills') ? ' fadeInUp' : '')} id="skills">
