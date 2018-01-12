@@ -115,7 +115,7 @@ class App extends Component {
             <h2>Professional Experience</h2>
             <div className="project">
               <div className="project-text">
-                <h3>Illumina</h3>
+                <h3>Illumina, Inc.</h3>
                 <p>I developed software for one of Illumina's upcoming Next-Generation Sequencing (NGS) instruments. Some of the projects I worked on included a front-end application for end users to do sequencing runs, a front-end application for manufacturers to test the instruments before shipment, and back-end libraries to control the instruments. All of our code was written in C#, and the views used either WPF or UWP.</p>
               </div>
               <div className="project-date">

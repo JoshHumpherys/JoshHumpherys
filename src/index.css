@@ -39,21 +39,15 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  padding: 2vw 0 0 10vw;
   vertical-align: middle;
   text-align: left;
-  padding: 10rem;
   color: #FFF;
 }
 
-.intro .intro-image-container:before {
-  content: ' ';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-
 .intro .intro-image-container {
-  display: inline;
+  display: flex;
+  align-items: center;
 }
 
 .intro .intro-image-container .intro-image {
@@ -64,23 +58,16 @@ body {
   width: 20rem;
 }
 
-.intro .intro-text-container:before {
-  content: ' ';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-
 .intro .intro-text-container {
-  display: inline;
+  display: flex;
+  align-items: center;
   flex: 1;
-  padding-left: 20px;
-  padding-bottom: 32px; // TODO remove fudge factor from :after on .intro-name
 }
 
 .intro .intro-text {
   display: inline-flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 
 .intro .intro-name {
@@ -183,4 +170,18 @@ h2 {
 
 .project-date {
   color: #00BCD4;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .intro .intro-image-container {
+    display: none;
+  }
+
+  .intro .intro-child {
+    padding-left: 10px;
+  }
 }
