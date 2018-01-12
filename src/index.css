@@ -98,6 +98,14 @@ body {
   margin: auto;
 }
 
+.in-text-link {
+  color: inherit;
+}
+
+.in-text-link:hover {
+  color: #006DF0;
+}
+
 @keyframes fadeInUp {
   from {
     transform: translate3d(0,40px,0)
@@ -137,8 +145,12 @@ body {
   -webkit-animation-name: fadeInUp;
 }
 
-h2 {
+.section-heading {
   color: #00BCD4;
+}
+
+.section .section-heading {
+  margin-top: 50px;
 }
 
 .social-icons-container {

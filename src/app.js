@@ -78,7 +78,7 @@ class App extends Component {
         </div>
         <div id="main-container" className="main-container">
           <div className={'section animated animatedFadeInUp' + (this.isVisible('about') ? ' fadeInUp' : '')} id="about">
-            <h2>About</h2>
+            <h2 className="section-heading">About</h2>
               <p>In May I will graduate from Covenant College with Bachelors degrees in both Computer Science and Mathematics. I have a passion for solving problems and am looking for a full-time programming position that will allow me to think critically to solve hard problems and increase my technical expertise.</p>
               <p>I recently completed a software engineering internship at Illumina writing C# applications and libraries for their Next-Generation Sequencing (NGS) instruments. Before my most recent position at Ilumina, I was a software development intern at Paragon Component Systems, LLC, where I was a full-stack web developer.</p>
               <p>In 2015 I graduated from La Costa Canyon High School with a 4.58 GPA (4.00 unweighted) and passed 14 AP tests. After graduation I enrolled in a compilation of courses known as the Android Development Nanodegree, co-created by Google and Udacity, but I put the nanodegree on hold to be continued at a later date.</p>
@@ -112,7 +112,7 @@ class App extends Component {
             </div>
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('professional') ? ' fadeInUp' : '')} id="professional">
-            <h2>Professional Experience</h2>
+            <h2 className="section-heading">Professional Experience</h2>
             <div className="project">
               <div className="project-text">
                 <h3 className="project-name">Illumina, Inc.</h3>
@@ -134,7 +134,7 @@ class App extends Component {
             </div>
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('personal') ? ' fadeInUp' : '')} id="personal">
-            <h2>Personal Projects</h2>
+            <h2 className="section-heading">Personal Projects</h2>
             <div className="project">
               <div className="project-text">
                 <h3 className="project-name">JoshHumpherys.com</h3>
@@ -174,20 +174,12 @@ class App extends Component {
             </div>
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('skills') ? ' fadeInUp' : '')} id="skills">
-            <h2>Skills</h2>
+            <h2 className="section-heading">Skills</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
-            <p>Mauris tempus elit posuere arcu bibendum, in accumsan nisl euismod. Aliquam pharetra placerat quam, in cursus enim auctor quis. Nulla eros ligula, suscipit sit amet sapien vel, volutpat volutpat sapien. Duis aliquam laoreet rutrum. Integer lacus arcu, lobortis a pharetra vel, accumsan in erat. Nunc elit leo, malesuada et malesuada nec, commodo at sem. Pellentesque vehicula, nisi quis rutrum egestas, felis justo sollicitudin mi, vitae molestie dolor turpis in nunc. Curabitur feugiat turpis at sem efficitur, vitae efficitur sapien blandit.</p>
-            <p>Curabitur vehicula purus quis nisl auctor elementum. Quisque vitae commodo est. Nulla eleifend dapibus risus eu bibendum. Phasellus porttitor enim id tempor maximus. Vestibulum tempor velit justo, et convallis lacus imperdiet ut. Nulla egestas dictum dolor eu hendrerit. Ut in odio diam. Quisque in mauris luctus, vulputate enim eu, tempus diam. Quisque consectetur massa erat, ut iaculis erat blandit a. Etiam diam orci, consequat sit amet leo a, convallis semper nibh. Donec elementum, quam non accumsan sollicitudin, leo magna commodo sapien, nec pharetra justo nunc sed est. Fusce eu odio tempus, molestie turpis quis, mollis sapien. Sed ac nisl nec metus eleifend ornare et faucibus turpis.</p>
-            <p>Integer sodales lobortis est, at vestibulum lectus pretium sit amet. Curabitur facilisis condimentum erat, a malesuada augue malesuada eu. Mauris orci diam, suscipit ullamcorper magna iaculis, interdum porttitor nisl. Sed fringilla tortor sit amet pellentesque gravida. Donec eleifend, felis sit amet suscipit congue, magna tellus molestie magna, lacinia volutpat nisl arcu quis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tristique quam vitae lobortis. Etiam augue ipsum, porta vitae semper vitae, malesuada nec erat. Donec sit amet enim lorem. Vivamus luctus, dolor et egestas egestas, est sem maximus orci, quis tempor justo arcu ac ipsum. Vivamus sit amet tempus enim.</p>
-            <p>Quisque non iaculis nibh. Mauris urna ante, porttitor ac pulvinar eu, aliquam sit amet nunc. Quisque ullamcorper, orci in cursus ultricies, erat leo tempus ipsum, eu fringilla arcu risus vel neque. Nunc vel ipsum et nunc porttitor vehicula. Cras sed pretium orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc varius purus molestie nibh convallis consectetur. Nulla semper enim sit amet dui dignissim, a hendrerit purus convallis. Curabitur dignissim tellus sit amet sem eleifend commodo.</p>
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('hobbies') ? ' fadeInUp' : '')} id="hobbies">
-            <h2>Hobbies</h2>
+            <h2 className="section-heading">Hobbies</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
-            <p>Mauris tempus elit posuere arcu bibendum, in accumsan nisl euismod. Aliquam pharetra placerat quam, in cursus enim auctor quis. Nulla eros ligula, suscipit sit amet sapien vel, volutpat volutpat sapien. Duis aliquam laoreet rutrum. Integer lacus arcu, lobortis a pharetra vel, accumsan in erat. Nunc elit leo, malesuada et malesuada nec, commodo at sem. Pellentesque vehicula, nisi quis rutrum egestas, felis justo sollicitudin mi, vitae molestie dolor turpis in nunc. Curabitur feugiat turpis at sem efficitur, vitae efficitur sapien blandit.</p>
-            <p>Curabitur vehicula purus quis nisl auctor elementum. Quisque vitae commodo est. Nulla eleifend dapibus risus eu bibendum. Phasellus porttitor enim id tempor maximus. Vestibulum tempor velit justo, et convallis lacus imperdiet ut. Nulla egestas dictum dolor eu hendrerit. Ut in odio diam. Quisque in mauris luctus, vulputate enim eu, tempus diam. Quisque consectetur massa erat, ut iaculis erat blandit a. Etiam diam orci, consequat sit amet leo a, convallis semper nibh. Donec elementum, quam non accumsan sollicitudin, leo magna commodo sapien, nec pharetra justo nunc sed est. Fusce eu odio tempus, molestie turpis quis, mollis sapien. Sed ac nisl nec metus eleifend ornare et faucibus turpis.</p>
-            <p>Integer sodales lobortis est, at vestibulum lectus pretium sit amet. Curabitur facilisis condimentum erat, a malesuada augue malesuada eu. Mauris orci diam, suscipit ullamcorper magna iaculis, interdum porttitor nisl. Sed fringilla tortor sit amet pellentesque gravida. Donec eleifend, felis sit amet suscipit congue, magna tellus molestie magna, lacinia volutpat nisl arcu quis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor tristique quam vitae lobortis. Etiam augue ipsum, porta vitae semper vitae, malesuada nec erat. Donec sit amet enim lorem. Vivamus luctus, dolor et egestas egestas, est sem maximus orci, quis tempor justo arcu ac ipsum. Vivamus sit amet tempus enim.</p>
-            <p>Quisque non iaculis nibh. Mauris urna ante, porttitor ac pulvinar eu, aliquam sit amet nunc. Quisque ullamcorper, orci in cursus ultricies, erat leo tempus ipsum, eu fringilla arcu risus vel neque. Nunc vel ipsum et nunc porttitor vehicula. Cras sed pretium orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc varius purus molestie nibh convallis consectetur. Nulla semper enim sit amet dui dignissim, a hendrerit purus convallis. Curabitur dignissim tellus sit amet sem eleifend commodo.</p>
           </div>
         </div>
       </div>
