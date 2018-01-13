@@ -18,6 +18,7 @@ import mysql from './img/mysql.svg'
 import latex from './img/latex.svg'
 import git from './img/git.png'
 import gitHub from './img/github.png'
+import wordpress from './img/wordpress.png'
 import androidStudio from './img/android studio.png'
 import intelliJ from './img/intellij.png'
 import webStorm from './img/webstorm.svg'
@@ -38,6 +39,15 @@ class App extends Component {
     this.isVisible = this.isVisible.bind(this);
   }
 
+  static navItemClick(id) {
+    if($('.navbar-collapse.collapse.in').length > 0) {
+      $('.navbar-toggle').click();
+      setTimeout(() => App.scroll(id), 380);
+    } else {
+      App.scroll(id);
+    }
+  }
+
   static scroll(id) {
     const scrollTop = $('#' + id).offset().top - 60;
     $('body, html').animate({ scrollTop });
@@ -54,7 +64,7 @@ class App extends Component {
       const sectionsVisible = [...this.state.sectionsVisible];
       sections.forEach(section => {
         const sectionHeight = $('#' + section).offset().top - $(document).scrollTop();
-        if(sectionHeight < viewportBottom - 100 && !sectionsVisible.includes(section)) {
+        if(sectionHeight < viewportBottom - 50 && !sectionsVisible.includes(section)) {
           sectionsVisible.push(section);
         }
       });
@@ -76,12 +86,11 @@ class App extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem onClick={() => App.scroll('about')}>About</NavItem>
-              <NavItem onClick={() => App.scroll('professional')}>Professional Projects</NavItem>
-              <NavItem onClick={() => App.scroll('personal')}>Personal Projects</NavItem>
-              <NavItem onClick={() => App.scroll('skills')}>Skills</NavItem>
-              <NavItem onClick={() => App.scroll('hobbies')}>Hobbies</NavItem>
-              <NavItem onClick={() => App.scroll('footer')}>Contact</NavItem>
+              <NavItem onClick={() => App.navItemClick('about')}>About</NavItem>
+              <NavItem onClick={() => App.navItemClick('professional')}>Professional Projects</NavItem>
+              <NavItem onClick={() => App.navItemClick('personal')}>Personal Projects</NavItem>
+              <NavItem onClick={() => App.navItemClick('skills')}>Skills</NavItem>
+              <NavItem onClick={() => App.navItemClick('hobbies')}>Hobbies</NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -95,7 +104,8 @@ class App extends Component {
                 <div className="intro-name">Josh Humpherys</div>
                 <div className="intro-position">Software Engineer</div>
                 <div className="intro-location-and-email">
-                  San Diego, CA <a href="mailto:joshua.humpherys@gmail.com">joshua.humpherys@gmail.com</a>
+                  San Diego, CA <span className="pipe">| </span>
+                  <a href="mailto:joshua.humpherys@gmail.com">joshua.humpherys@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -162,18 +172,6 @@ class App extends Component {
             <h2 className="section-heading">Personal Projects</h2>
             <div className="project">
               <div className="project-text">
-                <h3 className="project-name">JoshHumpherys.com</h3>
-                <div className="project-date">
-                  January 2018
-                </div>
-              </div>
-              <p>I programmed this website without a template using React and various other npm packages such as React-Bootstrap and jQuery. The project is hosted on Firebase.</p>
-              <h4 className="project-source">
-                <a href="https://github.com/JoshHumpherys/JoshHumpherys" target="blank">(source)</a>
-              </h4>
-            </div>
-            <div className="project">
-              <div className="project-text">
                 <h3 className="project-name">Cube Timer</h3>
                 <div className="project-date">
                   January 2018
@@ -200,27 +198,28 @@ class App extends Component {
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('skills') ? ' fadeInUp' : '')} id="skills">
             <h2 className="section-heading">Skills</h2>
-            <Skill name="Java" src={java} width="48" height="64" />
-            <Skill name="JavaScript" src={js} width="48" height="68" />
+            <Skill name="Java" src={java} width="64" height="84" />
             <Skill name="C#" src={cs} width="72" height="80" />
-            <Skill name="HTML5" src={html5} width="68" height="68" />
-            <Skill name="CSS3" src={css3} width="48" height="68" />
+            <Skill name="JavaScript" src={js} width="58" height="80" />
+            <Skill name="HTML5" src={html5} width="80" height="80" />
+            <Skill name="CSS3" src={css3} width="58" height="80" />
             <Skill name="React" src={react} width="64" height="64" />
-            <Skill name="Redux" src={redux} width="53" height="48" />
+            <Skill name="Redux" src={redux} width="64" height="58" />
             <Skill name="node.js" src={nodejs} width="128" height="78" />
             <Skill name="Firebase" src={firebase} width="48" height="66" />
             <Skill name="MySQL" src={mysql} width="120" height="62" />
             <Skill name="LaTeX" src={latex} width="120" height="50" />
             <Skill name="git" src={git} width="120" height="50" />
             <Skill name="GitHub" src={gitHub} width="150" height="44" />
-            <Skill name="Android Studio" src={androidStudio} width="48" height="48" />
-            <Skill name="IntelliJ" src={intelliJ} width="48" height="48" />
-            <Skill name="WebStorm" src={webStorm} width="48" height="48" />
-            <Skill name="Visual Studio" src={visualStudio} width="48" height="48" />
-            <Skill name="Eclipse" src={eclipse} width="48" height="52" />
-            <Skill name="Android" src={android} width="48" height="57" />
-            <Skill name="Linux" src={linux} width="56" height="66" />
-            <Skill name="Windows" src={windows} width="48" height="48" />
+            <Skill name="Wordpress" src={wordpress} width="64" height="64" />
+            <Skill name="Android Studio" src={androidStudio} width="64" height="64" />
+            <Skill name="IntelliJ" src={intelliJ} width="64" height="64" />
+            <Skill name="WebStorm" src={webStorm} width="64" height="64" />
+            <Skill name="Visual Studio" src={visualStudio} width="64" height="64" />
+            <Skill name="Eclipse" src={eclipse} width="64" height="70" />
+            <Skill name="Android" src={android} width="64" height="77" />
+            <Skill name="Linux" src={linux} width="64" height="78" />
+            <Skill name="Windows" src={windows} width="64" height="64" />
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('hobbies') ? ' fadeInUp' : '')} id="hobbies">
             <h2 className="section-heading">Hobbies</h2>

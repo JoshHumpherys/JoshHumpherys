@@ -28,6 +28,18 @@ body {
   cursor: pointer;
 }
 
+/*.navbar-default .navbar-toggle:hover {*/
+  /*background-color: initial;*/
+/*}*/
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
 .intro {
   width: 100%;
   height: 350px;
@@ -40,7 +52,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 2vw 0 0 10vw;
+  padding: 40px 0 0 10vw;
   vertical-align: middle;
   text-align: left;
   color: #FFF;
@@ -92,6 +104,15 @@ body {
 
 .intro .intro-location-and-email {
   font-size: 2rem;
+}
+
+.intro .intro-location-and-email > a {
+  font-size: 2rem;
+  color: #FFF;
+}
+
+.intro .intro-location-and-email > a:hover {
+  color: #006DF0;
 }
 
 .main-container {
@@ -205,7 +226,7 @@ body {
 #skills > .skill {
   display: inline-flex;
   flex-direction: column;
-  height: 128px;
+  height: 100px;
 }
 
 #skills > .skill:not(:last-child) {
@@ -219,10 +240,6 @@ body {
 
 #skills > .skill > a > img {
   vertical-align: sub;
-}
-
-#hobbies > .section-heading {
-  margin-top: 0; /* TODO figure out a better way to get rid of the awkward extra margin from the skills icons */
 }
 
 .footer {
@@ -269,14 +286,19 @@ body {
 
 .footer .footer-location-and-email > a {
   color: #FFF;
-  text-decoration: underline;
 }
 
 .footer .footer-location-and-email > a:hover {
   color: #006DF0;
 }
 
-@media screen and (max-width: 992px) {
+/*@media screen and (min-width: 768px) and (max-width: 991px) {*/
+  /*.intro .intro-child {*/
+    /*padding-top: 100px;*/
+  /*}*/
+/*}*/
+
+@media screen and (max-width: 767px) {
   .main-container {
     width: 90%;
   }
@@ -287,5 +309,11 @@ body {
 
   .intro .intro-child {
     padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 483px) { /* TODO this is too hacky */
+  .pipe {
+    display: none;
   }
 }
