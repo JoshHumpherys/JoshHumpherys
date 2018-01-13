@@ -4,7 +4,7 @@ class Skill extends Component {
   render() {
     return (
       <div className="skill">
-        <a href="javascript:alert('TODO fill in href value')" target="blank">
+        <a target="blank"> {/* TODO use href to link to the skill's webpage if it exists */}
           <img src={this.props.src} width={this.props.width} height={this.props.height} />
         </a>
         <div>{this.props.name}</div>

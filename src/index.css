@@ -204,6 +204,7 @@ body {
 #skills > .skill {
   display: inline-flex;
   flex-direction: column;
+  height: 128px;
 }
 
 #skills > .skill:not(:last-child) {
@@ -213,6 +214,14 @@ body {
 #skills > .skill > * {
   font-weight: bold;
   text-align: center;
+}
+
+#skills > .skill > a > img {
+  vertical-align: sub;
+}
+
+#hobbies > .section-heading {
+  margin-top: 0; /* TODO figure out a better way to get rid of the awkward extra margin from the skills icons */
 }
 
 @media screen and (max-width: 768px) {
