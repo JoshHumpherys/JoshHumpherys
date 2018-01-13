@@ -201,6 +201,20 @@ body {
   margin: 0;
 }
 
+#skills > .skill {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#skills > .skill:not(:last-child) {
+  margin-right: 24px;
+}
+
+#skills > .skill > * {
+  font-weight: bold;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .main-container {
     width: 90%;

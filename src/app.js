@@ -1,7 +1,31 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
-import Image from './img/joshhumpherys.jpeg'
 import $ from 'jquery'
+
+import Skill from './components/Skill'
+
+import josh from './img/joshhumpherys.jpeg'
+import java from './img/java.svg'
+import js from './img/js.png'
+import cs from './img/cs.png'
+import html5 from './img/html5.png'
+import css3 from './img/css3.png'
+import react from './img/react.svg'
+import redux from './img/redux.png'
+import nodejs from './img/nodejs.png'
+import firebase from './img/firebase.svg'
+import mysql from './img/mysql.svg'
+import latex from './img/latex.svg'
+import git from './img/git.png'
+import gitHub from './img/github.png'
+import androidStudio from './img/android studio.png'
+import intelliJ from './img/intellij.png'
+import webStorm from './img/webstorm.svg'
+import visualStudio from './img/visual studio.svg'
+import eclipse from './img/eclipse.svg'
+import android from './img/android.png'
+import linux from './img/linux.svg'
+import windows from './img/windows.png'
 
 class App extends Component {
   constructor(props) {
@@ -63,7 +87,7 @@ class App extends Component {
         <div id="intro" className="intro">
           <div className="intro-child">
             <div className="intro-image-container">
-              <img className="intro-image" src={Image} />
+              <img className="intro-image" src={josh} />
             </div>
             <div className="intro-text-container">
               <div className="intro-text">
@@ -175,7 +199,27 @@ class App extends Component {
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('skills') ? ' fadeInUp' : '')} id="skills">
             <h2 className="section-heading">Skills</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo massa, suscipit vitae maximus nec, aliquam ut sapien. Sed eu tempor nulla. Donec mollis enim eu felis scelerisque pharetra. Cras non odio justo. Praesent dapibus, nunc aliquam egestas vulputate, diam nunc luctus libero, eget tempor dolor mauris at orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin semper, metus quis pulvinar suscipit, tortor metus interdum sapien, nec elementum leo nisl fermentum nibh. Vestibulum id neque vitae ex gravida sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Etiam eget ipsum tempor, tempus erat quis, malesuada felis.</p>
+            <Skill name="Java" src={java} width="48" height="64" />
+            <Skill name="JavaScript" src={js} width="48" height="68" />
+            <Skill name="C#" src={cs} width="72" height="80" />
+            <Skill name="HTML5" src={html5} width="68" height="68" />
+            <Skill name="CSS3" src={css3} width="48" height="68" />
+            <Skill name="React" src={react} width="64" height="64" />
+            <Skill name="Redux" src={redux} width="53" height="48" />
+            <Skill name="node.js" src={nodejs} width="128" height="78" />
+            <Skill name="Firebase" src={firebase} width="48" height="66" />
+            <Skill name="MySQL" src={mysql} width="120" height="62" />
+            <Skill name="LaTeX" src={latex} width="120" height="50" />
+            <Skill name="git" src={git} width="120" height="50" />
+            <Skill name="GitHub" src={gitHub} width="150" height="44" />
+            <Skill name="Android Studio" src={androidStudio} width="48" height="48" />
+            <Skill name="IntelliJ" src={intelliJ} width="48" height="48" />
+            <Skill name="WebStorm" src={webStorm} width="48" height="48" />
+            <Skill name="Visual Studio" src={visualStudio} width="48" height="48" />
+            <Skill name="Eclipse" src={eclipse} width="48" height="52" />
+            <Skill name="Android" src={android} width="48" height="57" />
+            <Skill name="Linux" src={linux} width="56" height="66" />
+            <Skill name="Windows" src={windows} width="48" height="48" />
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('hobbies') ? ' fadeInUp' : '')} id="hobbies">
             <h2 className="section-heading">Hobbies</h2>
