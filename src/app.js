@@ -81,6 +81,7 @@ class App extends Component {
               <NavItem onClick={() => App.scroll('personal')}>Personal Projects</NavItem>
               <NavItem onClick={() => App.scroll('skills')}>Skills</NavItem>
               <NavItem onClick={() => App.scroll('hobbies')}>Hobbies</NavItem>
+              <NavItem onClick={() => App.scroll('footer')}>Contact</NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -224,6 +225,16 @@ class App extends Component {
           <div className={'section animated animatedFadeInUp' + (this.isVisible('hobbies') ? ' fadeInUp' : '')} id="hobbies">
             <h2 className="section-heading">Hobbies</h2>
             <p>When I'm not working on school, I enjoy developing retro-style arcade games, web apps, and Android apps, reading about new technology, learning about best coding practices and design guidelines, playing frisbee and volleyball, speedcubing, and running. For those who don't know, speedcubing is where you solve a Rubik's cube as fast as you can. As with most speedcubers, I generally do a few hundred solves per session once or twice a week, with shorter sessions in between. My personal record is 7.42 seconds, I average around 13 seconds, and I can even solve the cube blindfolded. I also run every day for fun, but I no longer run competitively. Regarding programming, I'm always working on something whether it be for school, work, or fun, and yet there are still so many things I want to develop!</p>
+          </div>
+        </div>
+        <div id="footer" className="footer">
+          <div className="footer-text-container">
+            <div className="footer-text">
+              <div className="footer-contact">Let's talk!</div>
+              <div className="footer-location-and-email">
+                Email me at: <a href="mailto:joshua.humpherys@gmail.com">joshua.humpherys@gmail.com</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
