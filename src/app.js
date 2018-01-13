@@ -80,7 +80,7 @@ class App extends Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <a onClick={() => App.scroll('home')}>Josh Humpherys</a>
+              <a onClick={() => App.navItemClick('home')}>Josh Humpherys</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
