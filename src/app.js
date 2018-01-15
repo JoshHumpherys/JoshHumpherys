@@ -13,6 +13,7 @@ import css3 from './img/css3.png'
 import react from './img/react.svg'
 import redux from './img/redux.png'
 import nodejs from './img/nodejs.png'
+import npm from './img/npm.svg'
 import firebase from './img/firebase.svg'
 import mysql from './img/mysql.svg'
 import latex from './img/latex.svg'
@@ -206,6 +207,7 @@ class App extends Component {
             <Skill name="React" src={react} width="64" height="64" />
             <Skill name="Redux" src={redux} width="64" height="58" />
             <Skill name="node.js" src={nodejs} width="128" height="78" />
+            <Skill name="npm" src={npm} width="128" height="78" />
             <Skill name="Firebase" src={firebase} width="48" height="66" />
             <Skill name="MySQL" src={mysql} width="120" height="62" />
             <Skill name="LaTeX" src={latex} width="120" height="50" />
