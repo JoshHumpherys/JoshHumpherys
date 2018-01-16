@@ -4,7 +4,7 @@ import $ from 'jquery'
 
 import Skill from './components/Skill'
 
-import josh from './img/joshhumpherys.jpeg'
+import josh from './img/joshhumpherys512.jpg'
 import java from './img/java.svg'
 import js from './img/js.png'
 import cs from './img/cs.png'
