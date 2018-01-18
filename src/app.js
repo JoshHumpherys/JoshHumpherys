@@ -115,10 +115,10 @@ class App extends Component {
         <div id="main-container" className="main-container">
           <div className={'section animated animatedFadeInUp' + (this.isVisible('about') ? ' fadeInUp' : '')} id="about">
             <h2 className="section-heading">About</h2>
-              <p>In May I will graduate from Covenant College with Bachelors degrees in both Computer Science and Mathematics. I have a passion for solving problems and am looking for a full-time programming position that will allow me to think critically to solve hard problems and increase my technical expertise.</p>
-              <p>I recently completed a software engineering internship at Illumina writing C# applications and libraries for their Next-Generation Sequencing (NGS) instruments. Before my most recent position at Ilumina, I was a software development intern at Paragon Component Systems, LLC, where I was a full-stack web developer.</p>
-              <p>In 2015 I graduated from La Costa Canyon High School with a 4.58 GPA (4.00 unweighted) and passed 14 AP tests. After graduation I enrolled in a compilation of courses known as the Android Development Nanodegree, co-created by Google and Udacity, but I put the nanodegree on hold to be continued at a later date.</p>
-              <p>My hobbies and regular activities include developing retro-style arcade games and Android apps, reading about new technology, learning about best coding practices and design guidelines, playing frisbee and volleyball, speedcubing, and running.</p>
+            <p>In May, I will graduate with a double major in Computer Science and Mathematics. I have a passion for solving problems and am looking for a full-time programming position that will allow me to think critically to solve hard problems and increase my technical expertise.</p>
+            <p>I recently completed a software engineering internship at Illumina writing C# applications and libraries for their Next-Generation Sequencing (NGS) instruments. Before my most recent position at Illumina, I was a software development intern at Paragon Component Systems where I was a full-stack web developer.</p>
+            <p>In 2015, I graduated from La Costa Canyon High School with a 4.58 GPA (4.00 unweighted) and passed 14 AP tests. After graduation I enrolled in a compilation of courses known as the Android Development Nanodegree, co-created by Google and Udacity, but I put the nanodegree on hold to be continued at a later date.</p>
+            <p>My hobbies and regular activities include developing retro-style arcade games, web apps, and Android apps, reading about new technology, learning about best coding practices and design guidelines, playing Frisbee™ and volleyball, speedcubing, and running.</p>
             <p>I'm highly self-motivated and am always looking for new opportunities to gain experience and expand my realm of knowledge.</p>
             <div className="social-icons-container">
               <div className="social-icon">
@@ -225,7 +225,7 @@ class App extends Component {
           </div>
           <div className={'section animated animatedFadeInUp' + (this.isVisible('hobbies') ? ' fadeInUp' : '')} id="hobbies">
             <h2 className="section-heading">Hobbies</h2>
-            <p>When I'm not working on school, I enjoy developing retro-style arcade games, web apps, and Android apps, reading about new technology, learning about best coding practices and design guidelines, playing frisbee and volleyball, speedcubing, and running. For those who don't know, speedcubing is where you solve a Rubik's cube as fast as you can. As with most speedcubers, I generally do a few hundred solves per session once or twice a week, with shorter sessions in between. My personal record is 7.42 seconds, I average around 13 seconds, and I can even solve the cube blindfolded. I also run every day for fun, but I no longer run competitively. Regarding programming, I'm always working on something whether it be for school, work, or fun, and yet there are still so many things I want to develop!</p>
+            <p>I enjoy developing retro-style arcade games, web apps, and Android apps, reading about new technology, learning about best coding practices and design guidelines, playing Frisbee&#8482; and volleyball, speedcubing, and running. For those who don't know, speedcubing is where you solve a Rubik's cube as fast as you can. As with most speedcubers, I generally do a few hundred solves per session once or twice a week, with shorter sessions in between. My personal record is 7.42 seconds, and I can even solve the cube blindfolded. I also run every day for fun, but I no longer run competitively. Regarding programming, I'm always working on something whether it be for school, work, or fun, and yet there are still so many things I want to develop!</p>
           </div>
         </div>
         <div id="footer" className="footer">
@@ -233,7 +233,7 @@ class App extends Component {
             <div className="footer-text">
               <div className="footer-contact">Let's talk!</div>
               <div className="footer-location-and-email">
-                Email me at: <a href="mailto:joshua.humpherys@gmail.com">joshua.humpherys@gmail.com</a>
+                Email me: <a href="mailto:joshua.humpherys@gmail.com">joshua.humpherys@gmail.com</a>
               </div>
             </div>
           </div>
