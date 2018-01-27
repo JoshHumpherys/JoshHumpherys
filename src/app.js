@@ -173,14 +173,15 @@ class App extends Component {
             <h2 className="section-heading">Personal Projects</h2>
             <div className="project">
               <div className="project-text">
-                <h3 className="project-name">Cube Timer</h3>
+                <h3 className="project-name">Color Timer</h3>
                 <div className="project-date">
                   January 2018
                 </div>
               </div>
               <p>I'm creating a browser-based timer for speedcubers to record solve times and perform analysis. Speedcubers are people whose hobby is to solve a Rubik's cube as fast as possible, and to do so hundreds of times per session. This timer will record every solve time and display many different averages and distribution graphs. My goal is to create a timer with both outstanding functionality and an aesthetically-pleasing, intuitive user interface.</p>
               <h4 className="project-source">
-                <a href="https://github.com/JoshHumpherys/cube-timer" target="blank">(source)</a>
+                <a href="https://github.com/JoshHumpherys/color-timer" target="blank">(source)</a>&nbsp;
+                <a href="https://www.colortimer.us" target="blank">(full app)</a>
               </h4>
             </div>
             <div className="project">
