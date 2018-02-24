@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import $ from 'jquery'
+import ReactGA from 'react-ga'
 
 import Skill from './components/Skill'
 
@@ -59,6 +60,9 @@ class App extends Component {
   }
 
   componentDidMount() {
+    ReactGA.initialize('UA-73609975-2');
+    ReactGA.pageview(window.location.pathname);
+
     const sections = ['about', 'professional', 'personal', 'skills', 'hobbies'];
     const viewportBottom = $(window).scrollTop() + $(window).height();
     const handleScroll = () => {
